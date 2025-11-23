@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>TrueWin Digital Services</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- TOP NAV -->
+  <header class="nav">
+    <div class="nav-left">
+      <div class="logo-orb">TW</div>
+      <div class="logo-text">
+        <div class="logo-main">TrueWin</div>
+        <div class="logo-sub">Digital Services
+</div>
+      </div>
+    </div>
+    <button class="nav-toggle" id="nav-toggle">☰</button>
+    <nav class="nav-links" id="nav-links">
+      <a href="#home">Home</a>
+      <a href="#verification">Verification</a>
+      <a href="#stats">Stats</a>
+      <a href="#transparency">Transparency</a>
+      <a href="#announcements">Announcements</a>
+      <a href="#games">Game Zone</a>
+      <a href="#faq">FAQ</a>
+      <a href="#legal">Legal</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg-orb hero-bg-orb-1"></div>
+    <div class="hero-bg-orb hero-bg-orb-2"></div>
+
+    <div class="hero-inner">
+      <div class="hero-pill">
+        Registered MSME • Udyam No.<strong>UDYAM-GJ-16-0040831</strong>
+      </div>
+      <h1>TrueWin — Skill-Based. Transparent. Legal. Update from laptop</h1>
+      <p class="hero-text">
+        TrueWin Digital Services is a registered Indian MSME running
+        skill-based giveaways, VIP rewards and arcade-style timepass games.
+        No gambling, no betting — only logic, speed and clear rules.
+      </p>
+      <div class="hero-actions">
+        <a href="#verification" class="btn btn-primary">Get Verified</a>
+        <a href="#games" class="btn btn-ghost">Enter Game Zone</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat-card">
+          <span class="hero-stat-label">Platform Status</span>
+          <span class="hero-stat-value badge badge-verified">Verified MSME ✅</span>
+        </div>
+        <div class="hero-stat-card">
+          <span class="hero-stat-label">Identity</span>
+          <span class="hero-stat-value badge badge-msme">Udyam Registered 💼</span>
+        </div>
+        <div class="hero-stat-card">
+          <span class="hero-stat-label">Core Principle</span>
+          <span class="hero-stat-value">Skill • Logic • Fair Play</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VERIFICATION -->
+  <section id="verification" class="section section-alt">
+    <header class="section-header">
+      <h2>Verification System</h2>
+      <p>Three levels to keep fake IDs and spam away.</p>
+    </header>
+
+    <div class="grid grid-3">
+      <div class="card card-level level-non">
+        <h3>🔴 Non-Verified</h3>
+        <p class="level-tag badge badge-basic">Viewer Only</p>
+        <ul class="list-dot">
+          <li>Can stay in channel &amp; read posts.</li>
+          <li>No identity checked.</li>
+          <li><strong>Giveaway entries are ignored.</strong></li>
+        </ul>
+      </div>
+
+      <div class="card card-level level-basic">
+        <h3>🟡 Verified</h3>
+        <p class="level-tag badge badge-verified">Public Eligible</p>
+        <ul class="list-dot">
+          <li>Send to owner (Telegram DM):</li>
+          <ul class="list-inline">
+            <li>Full Name</li>
+            <li>Telegram <strong>@username</strong></li>
+            <li>State (India)</li>
+            <li>Age (must be 18+)</li>
+            <li>UPI ID</li>
+          </ul>
+          <li>Send ₹1 to <strong>tanishparikh1@ptyes</strong> for UPI name check.</li>
+          <li>Entry counted in public giveaways.</li>
+          <li>Smoother payouts &amp; higher trust.</li>
+        </ul>
+      </div>
+
+      <div class="card card-level level-adv">
+        <h3>🟢 Advanced Verified (VIP)</h3>
+        <p class="level-tag badge badge-vip">VIP Identity</p>
+        <ul class="list-dot">
+          <li>All Verified details, plus:</li>
+          <li>Selfie holding a paper with:
+            <ul class="list-inline">
+              <li>“TrueWin Verification”</li>
+              <li>Date</li>
+              <li>Your @username</li>
+            </ul>
+          </li>
+          <li>Last 4 digits of Aadhaar (never full number).</li>
+          <li>Available only to active <strong>₹149/month VIP</strong>.</li>
+          <li>When VIP expires, Advanced status ends automatically.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="info-banner">
+      To get verified, DM <strong>@truewindigitalservices</strong> on Telegram.
+      If needed, you can also chat on WhatsApp at
+      <strong>+91 9687283434</strong> (after initial Telegram DM so records stay clear).
+      If you don’t trust easily, you can ask to see the MSME certificate or
+      verify the Udyam number on the Govt. portal.
+    </div>
+
+    <!-- VERIFICATION FORM HELPER -->
+    <div class="card verify-form-card">
+      <h3>Verification Request Helper</h3>
+      <p class="small-note">
+        This form does <strong>not</strong> send anything itself.
+        It only creates a ready message for you to copy and paste into
+        <strong>@truewindigitalservices</strong> on Telegram.
+      </p>
+
+      <form id="verify-form">
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="vf-name" class="form-label">Full Name</label>
+            <input id="vf-name" class="form-input" type="text" placeholder="Your real name" required />
+          </div>
+
+          <div class="form-field">
+            <label for="vf-username" class="form-label">Telegram Username</label>
+            <input id="vf-username" class="form-input" type="text" placeholder="@your_username" required />
+          </div>
+
+          <div class="form-field">
+            <label for="vf-state" class="form-label">State (India)</label>
+            <input id="vf-state" class="form-input" type="text" placeholder="Gujarat, Maharashtra, etc." required />
+          </div>
+
+          <div class="form-field">
+            <label for="vf-age" class="form-label">Age</label>
+            <input id="vf-age" class="form-input" type="number" min="18" max="100" placeholder="18+" required />
+          </div>
+
+          <div class="form-field">
+            <label for="vf-upi" class="form-label">UPI ID</label>
+            <input id="vf-upi" class="form-input" type="text" placeholder="yourupi@bank" required />
+          </div>
+
+          <div class="form-field">
+            <label for="vf-level" class="form-label">Verification Level</label>
+            <select id="vf-level" class="form-input" required>
+              <option value="basic">Verified (Public Eligible)</option>
+              <option value="advanced">Advanced Verified (VIP)</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="vf-aadhaar" class="form-label">
+              Aadhaar last 4 digits (Advanced only)
+            </label>
+            <input id="vf-aadhaar" class="form-input" type="text" maxlength="4" placeholder="VIP only" />
+          </div>
+
+          <div class="form-field form-field-full">
+            <label for="vf-vip-payment" class="form-label">
+              VIP Payment Info (Advanced only)
+            </label>
+            <input
+              id="vf-vip-payment"
+              class="form-input"
+              type="text"
+              placeholder="UPI txn ID / Razorpay ID / 'Will pay now via UPI'"
+            />
+          </div>
+
+          <div class="form-field form-field-full">
+            <label for="vf-notes" class="form-label">Extra note (optional)</label>
+            <textarea
+              id="vf-notes"
+              class="form-input"
+              rows="2"
+              placeholder="Eg: already VIP, referred by friend, old member, etc."
+            ></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-small">
+          Generate Telegram Message
+        </button>
+      </form>
+
+      <div id="verify-preview" class="game-box verify-preview hidden">
+        <div class="verify-preview-header">
+          <span>Copy this &amp; send to <strong>@truewindigitalservices</strong> on Telegram</span>
+          <button id="verify-copy-btn" class="btn btn-ghost btn-small">Copy</button>
+        </div>
+        <textarea
+          id="verify-preview-text"
+          class="form-input verify-preview-text"
+          rows="7"
+          readonly
+        ></textarea>
+        <p id="verify-preview-status" class="small-note"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section id="stats" class="section">
+    <header class="section-header">
+      <h2>Platform Stats</h2>
+      <p>Manual but honest counters for the TrueWin community.</p>
+    </header>
+
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Total Members</h3>
+        <p id="stat-total-members" class="stat-big">0</p>
+        <p class="small-note">Approximate channel + group count.</p>
+      </div>
+      <div class="card">
+        <h3>Verified Members</h3>
+        <p id="stat-verified" class="stat-big">0</p>
+        <p class="small-note">Basic verification completed.</p>
+      </div>
+      <div class="card">
+        <h3>Advanced Verified (VIP)</h3>
+        <p id="stat-advanced" class="stat-big">0</p>
+        <p class="small-note">VIP identity confirmed.</p>
+      </div>
+      <div class="card">
+        <h3>Total Giveaways</h3>
+        <p id="stat-giveaways" class="stat-big">0</p>
+        <p class="small-note">Based on internal giveaway logs.</p>
+      </div>
+      <div class="card">
+        <h3>Total Payout (₹)</h3>
+        <p id="stat-payout" class="stat-big">0</p>
+        <p class="small-note">Sum of all giveaways so far.</p>
+      </div>
+    </div>
+
+    <div class="info-banner">
+      These stats are updated manually by the owner using real records.
+      They are not live from Telegram or bank yet, but kept transparent and realistic.
+    </div>
+  </section>
+
+  <!-- TRANSPARENCY -->
+  <section id="transparency" class="section section-alt">
+    <header class="section-header">
+      <h2>Transparency &amp; Public Records</h2>
+      <p>Monthly snapshot for community trust.</p>
+    </header>
+
+    <div class="card">
+      <p class="small-note">
+        This is <strong>not</strong> an investment or security.
+        These numbers are shared only to show how money circulates through giveaways
+        and how the platform is managed.
+      </p>
+
+      <div class="transparency-table-wrapper">
+        <table class="transparency-table">
+          <thead>
+            <tr>
+              <th>Month</th>
+              <th>Total Giveaways</th>
+              <th>₹ Distributed</th>
+              <th>VIP Revenue (₹)</th>
+              <th>Manager Payroll (₹)</th>
+              <th>Net Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Oct 2025</td>
+              <td>160</td>
+              <td>10,569</td>
+              <td>254</td>
+              <td>1,800</td>
+              <td class="neg">Loss: ₹12,115</td>
+            </tr>
+            <!-- Add new rows per month here -->
+          </tbody>
+        </table>
+      </div>
+
+      <p class="small-note">
+        Detailed internal records are maintained privately by the owner and can
+        be summarised for audits if ever required by law.
+      </p>
+    </div>
+  </section>
+
+  <!-- ANNOUNCEMENTS -->
+  <section id="announcements" class="section">
+    <header class="section-header">
+      <h2>Announcements</h2>
+      <p>Important updates manually copied from the Telegram channel.</p>
+    </header>
+
+    <div class="card">
+      <p class="small-note">
+        ⚠️ This section is updated manually by the owner/managers.
+        For final info, always check
+        <a href="https://t.me/truewindigitalservices" target="_blank">@truewindigitalservices</a>
+        on Telegram.
+      </p>
+
+      <div class="announcement-list">
+        <!-- Edit these articles whenever you want -->
+        <article class="announcement">
+          <div class="announcement-meta">
+            <span class="badge badge-verified">Live</span>
+            <span class="announcement-date">Example: 24 Nov 2025 • 8:00 PM IST</span>
+          </div>
+          <h3 class="announcement-title">Next Public Giveaway – ₹600 Pool</h3>
+          <p class="announcement-body">
+            Today’s round will be posted first on Telegram.
+            Only Verified and Advanced Verified users will be counted as valid entries.
+            Read the post carefully before answering.
+          </p>
+        </article>
+
+        <article class="announcement">
+          <div class="announcement-meta">
+            <span class="badge badge-basic">Info</span>
+            <span class="announcement-date">Example: 23 Nov 2025</span>
+          </div>
+          <h3 class="announcement-title">Verification Update</h3>
+          <p class="announcement-body">
+            Advanced Verification now requires active ₹149 VIP membership.
+            Once VIP expires, Advanced status ends automatically.
+            Normal Verified (free) is still available for public rounds.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GAMES -->
+  <section id="games" class="section section-alt">
+    <header class="section-header">
+      <h2>🎮 TrueWin Arcade Zone</h2>
+      <p>Real-time neon mini-games — just for fun, no money involved.</p>
+    </header>
+
+    <div class="info-banner">
+      These games are only for practice and timepass.
+      They do <strong>not</strong> decide real giveaway winners and involve no money.
+    </div>
+
+    <div class="game-tabs">
+      <button class="game-tab active" data-game="knife">Knife Hit Arena</button>
+      <button class="game-tab" data-game="dodge">Neon Dodge Runner</button>
+    </div>
+
+    <div class="game-panels">
+      <!-- KNIFE HIT ARENA -->
+      <div id="game-knife" class="game-panel active">
+        <div class="game-card">
+          <h3>🔪 Knife Hit Arena</h3>
+          <p class="game-desc">
+            Tap / click to throw knives at the spinning neon wheel.
+            Don’t hit any existing knife or it’s game over.
+          </p>
+          <div class="game-box game-box-3d">
+            <canvas id="knife-canvas" width="320" height="320"></canvas>
+          </div>
+          <div class="game-controls-row">
+            <button id="knife-reset" class="btn btn-ghost btn-small">Restart</button>
+          </div>
+          <p id="knife-status" class="game-status"></p>
+        </div>
+      </div>
+
+      <!-- NEON DODGE RUNNER -->
+      <div id="game-dodge" class="game-panel">
+        <div class="game-card">
+          <h3>🧱 Neon Dodge Runner</h3>
+          <p class="game-desc">
+            Use <strong>←</strong> and <strong>→</strong> (or A/D) to move.
+            Dodge the falling neon blocks as long as you can.
+          </p>
+          <div class="game-box game-box-3d">
+            <canvas id="dodge-canvas" width="320" height="360"></canvas>
+          </div>
+          <div class="game-controls-row">
+            <button id="dodge-start" class="btn btn-primary btn-small">Start / Restart</button>
+          </div>
+          <p id="dodge-status" class="game-status"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <header class="section-header">
+      <h2>FAQ</h2>
+      <p>Most common questions about TrueWin.</p>
+    </header>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>Is this gambling?</h3>
+        <p>
+          No. TrueWin runs skill-based, time-limited challenges
+          (logic, maths, puzzles, speed).
+          There is no betting of money, no random number games, and no casino-style wins.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>How do I become Verified?</h3>
+        <p>
+          Send your <strong>name</strong>, <strong>@username</strong>,
+          <strong>state</strong>, <strong>age (18+)</strong> and
+          <strong>UPI ID</strong> to <strong>@truewindigitalservices</strong> on Telegram,
+          then send ₹1 to <strong>tanishparikh1@ptyes</strong> so the name can be matched.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>What is Advanced Verified?</h3>
+        <p>
+          Advanced Verified is for active VIPs only.
+          It confirms Aadhaar last 4 digits and a selfie with written proof,
+          to make sure you are a real person and not a fake multi-ID.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>How do I contact support?</h3>
+        <p>
+          Primary: Telegram DM to <strong>@truewindigitalservices</strong>.<br />
+          Secondary (after Telegram): WhatsApp at <strong>+91 9687283434</strong>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEGAL -->
+  <section id="legal" class="section section-alt">
+    <header class="section-header">
+      <h2>Legal &amp; Compliance</h2>
+      <p>Short summary. Full Terms &amp; Conditions hosted on Telegram.</p>
+    </header>
+
+    <div class="card">
+      <ul class="list-dot">
+        <li>TrueWin Digital Services operates as a registered MSME in India.</li>
+        <li>Giveaways are <strong>skill-based</strong>, not gambling or lottery.</li>
+        <li>
+          Platform follows Indian IT Act 2000 and basic principles of
+          Consumer Protection (E-Commerce) Rules 2020 for transparency and fairness.
+        </li>
+        <li>
+          Only Indian residents (with Indian UPI / digital payout options) are eligible
+          for monetary prizes.
+        </li>
+        <li>
+          User data is used only for verification and payouts.
+          Aadhaar is never stored fully — only last 4 digits if needed.
+        </li>
+        <li>
+          For full Terms &amp; Conditions, see the pinned documents in
+          <a href="https://t.me/truewindigitalservices" target="_blank">
+            the official Telegram channel
+          </a>.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT / TEAM -->
+  <section id="contact" class="section">
+    <header class="section-header">
+      <h2>Contact &amp; Team</h2>
+      <p>Reach out only on these official handles.</p>
+    </header>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>Owner</h3>
+        <ul class="list-dot">
+          <li>Name: <strong>Tanish Gaurang Parikh</strong></li>
+          <li>Telegram (Official): <a href="https://t.me/truewindigitalservices" target="_blank">@truewindigitalservices</a></li>
+          <li>WhatsApp (Support after DM): <strong>+91 9687283434</strong></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Managers</h3>
+        <ul class="list-dot">
+          <li>Manager 1: <a href="https://t.me/cranium08" target="_blank">@cranium08</a></li>
+          <li>Manager 2: <a href="https://t.me/nexxup" target="_blank">@nexxup</a></li>
+          <li>
+            Managers can help with doubts, but final decision always stays with the Owner.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOATING BUTTONS -->
+  <!-- Right side: Telegram & WhatsApp -->
+  <a
+    href="https://t.me/truewindigitalservices"
+    target="_blank"
+    class="fab fab-right fab-telegram"
+    data-label="Open Telegram Channel"
+  >
+    TG
+  </a>
+
+  <a
+    href="https://wa.me/919687283434"
+    target="_blank"
+    class="fab fab-right fab-whatsapp"
+    data-label="Chat on WhatsApp"
+  >
+    WA
+  </a>
+
+  <!-- Left side: Verify & VIP -->
+  <a
+    href="#verification"
+    class="fab fab-left fab-verify"
+    data-label="Go to Verification"
+  >
+    Verify
+  </a>
+
+  <a
+    href="#verification"
+    class="fab fab-left fab-vip"
+    data-label="VIP & Advanced Verification"
+  >
+    VIP
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
